@@ -58,12 +58,6 @@ export default function Home() {
     <>
       <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
 
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
       <header className={`header ${isActive ? "active" : ""}`} data-header>
         <div className="container">
           <a href="#" className="logo">
