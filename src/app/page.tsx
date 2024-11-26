@@ -61,7 +61,7 @@ export default function Home() {
       <header className={`header ${isActive ? "active" : ""}`} data-header>
         <div className="container">
           <a href="#" className="logo">
-            <img src="./logo.svg" alt="Landio logo" />
+            <img src="https://framerusercontent.com/images/GByoaMmZxwN1tfXrfWiEq7AevWc.png" alt="Landio logo" />
           </a>
 
           <button
@@ -72,7 +72,7 @@ export default function Home() {
             <IoIosMenu size={30} />
           </button>
 
-          <nav className="navbar">
+          <nav className="navbar font-font-copyLocalOne">
             <ul className="navbar-list">
               <li>
                 <a href="#hero" className="navbar-link">
@@ -105,7 +105,7 @@ export default function Home() {
               </li>
             </ul>
 
-            <div className="header-actions">
+            {/* <div className="header-actions">
               <a href="#" className="header-action-link">
                 Log in
               </a>
@@ -113,7 +113,7 @@ export default function Home() {
               <a href="#" className="header-action-link">
                 Register
               </a>
-            </div>
+            </div> */}
           </nav>
         </div>
       </header>
@@ -121,39 +121,50 @@ export default function Home() {
       <main>
         <article>
           <section className="hero" id="hero">
-            <div className="container">
-              <div className="hero-content">
-                <h1 className="h1 hero-title">Creative Landing Page</h1>
-
-                <p className="hero-text">
-                  A creative & modern landing page with Landio template & We
-                  love make things amazing.
-                </p>
-
-                <p className="form-text">
-                  <span>🥳</span> Nemo enim ipsam voluptatem quia voluptas sit
-                  aspernatur that is fugit.
-                </p>
-
-                <form action="" className="hero-form">
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    placeholder="Enter Your Email"
-                    className="email-field"
-                  />
-
-                  <button type="submit" className="btn btn-primary">
-                    Subscribe
-                  </button>
-                </form>
+            <div className="video-background">
+              <video autoPlay loop muted>
+                <source
+                  src="https://darker-supply.s3.us-east-005.backblazeb2.com/Flowing+Neon+Curve+Lines_1.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
               </div>
-
-              <figure className="hero-banner">
-                <img src="./features-img-1.png" alt="Hero image" />
-              </figure>
-            </div>
+              <div className="container hero-container">
+                <div className="hero-content">
+                  <h1
+                    className="h1 hero-title font-copyLocalThree"
+                    style={{ fontSize: "72px", fontWeight: 500 }}
+                  >
+                    Manage your sales and <br />
+                    analytics in{" "}
+                    <span
+                      style={{ fontWeight: 400, display: "contents" }}
+                      className="font-copyLocalOne"
+                    >
+                      one place
+                    </span>
+                  </h1>
+                  <div className="hero-bottom">
+                  <p className="hero-text font-copyLocalThree">
+                    Track custom events, increase form submissions, optimise<br/>
+                    conversion rates and optimise your sales flow with Scalable.
+                  </p>
+                  {/* <form action="" className="hero-form"> */}
+                    {/* <input
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="Enter Your Email"
+                      className="email-field"
+                    /> */}
+                    <button type="submit" className="btn btn-primary font-copyLocalThree">
+                      Subscribe
+                    </button>
+                  {/* </form> */}
+                  </div>
+                </div>
+              </div>
           </section>
 
           <section className="about">

@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        copyLocalOne: ["var(--font-copyLocalOne)"],
+        copyLocalTwo: ["var(--font-copyLocalTwo)"],
+        copyLocalThree: ["var(--font-copyLocalThree)"],
+        copyLocalFour: ["var(--font-copyLocalFour)"],
+      },
     },
   },
   plugins: [],

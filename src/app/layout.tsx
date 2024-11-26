@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter,Mulish } from "next/font/google";
+import localfont from "next/font/local";
+import { Mulish } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 const mulish = Mulish({
   subsets: ['latin'],
@@ -10,8 +11,37 @@ const mulish = Mulish({
   variable: '--font-poppins',
 })
 
+// const copyLocalOne = localfont({
+//   src: [ 
+//     {
+//       path:"../../public/fonts/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.ttf",
+//       weight: "400", 
+//     },
+//   ],
+//   variable: '--font-copyLocalOne',
+// });
+
+const copyLocalOne = localfont({
+  src:"../../public/fonts/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.ttf",
+  variable: '--font-copyLocalOne',
+})
+
+const copyLocalTwo = localfont({
+  src:"../../public/fonts/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.ttf",
+  variable: '--font-copyLocalTwo',
+})
+const copyLocalThree = localfont({
+  src:"../../public/fonts/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.ttf",
+  variable: '--font-copyLocalThree',
+})
+const copyLocalFour = localfont({
+  src:"../../public/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW32.ttf",
+  variable: '--font-copyLocalFour',
+})
+
+
 export const metadata: Metadata = {
-  title: "Software Solutions",
+  title: "Agency Template",
   description: "Get the best software solutions | Best Marketing Campaigns",
 };
 
@@ -22,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mulish.className}>{children}</body>
+      <body className={`${copyLocalOne.variable} ${copyLocalTwo.variable} ${copyLocalThree.variable} ${copyLocalFour.variable}`}>{children}</body>
     </html>
   );
 }
