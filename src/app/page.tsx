@@ -36,6 +36,8 @@ import {
 } from "react-icons/io5";
 import React, { useState } from "react";
 
+import img from '../../public/framer-hero-img.avif'
+
 export default function Home() {
   // const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
   // const header = document.querySelector("[data-header]");
@@ -162,9 +164,13 @@ export default function Home() {
                       Subscribe
                     </button>
                   {/* </form> */}
+                  <div className="hero-second-img-wrapper">
+                    <img className="hero-second-img" src="/framer-hero-img.avif" alt="Hero Image" />
+                  </div>
                   </div>
                 </div>
               </div>
+              
           </section>
 
           <section className="about">
