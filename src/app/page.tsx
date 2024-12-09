@@ -37,6 +37,7 @@ import {
 import React, { useState } from "react";
 
 import img from '../../public/framer-hero-img.avif'
+import {MarqueeDemoVertical} from "../components/ui/MarqueeDemoVertical"
 
 export default function Home() {
   // const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
@@ -170,24 +171,40 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
           </section>
+
+          <div className="section-divider">
+            <div className="glow-effect"></div>
+          </div>
 
           <section className="about">
             <div className="container">
               <div className="about-content">
-                <div className="about-icon">
+              <h1
+                    className="h1 hero-title font-copyLocalThree"
+                    style={{ fontSize: "52px", fontWeight: 500 }}
+                  >
+                    Track your sales and <br />
+                    analytics in{" "}
+                    <span
+                      style={{ fontWeight: 400, display: "contents" }}
+                      className="font-copyLocalOne"
+                    >
+                      one place
+                    </span>
+                  </h1>
+                {/* <div className="about-icon">
                   <IoCubeOutline size={32} />
-                </div>
+                </div> */}
 
-                <h2 className="h2 about-title">Why Choose Us ?</h2>
+                {/* <h2 className="h2 about-title">Why Choose Us ?</h2>
 
                 <p className="about-text">
                   Nam libero tempore cum soluta as nobis est eligendi optio
                   cumque nihile impedite quo minus id quod maxime.
-                </p>
+                </p> */}
 
-                <button className="btn btn-outline">Learn More</button>
+                {/* <button className="btn btn-outline">Learn More</button> */}
               </div>
 
               <ul className="about-list">
@@ -256,14 +273,33 @@ export default function Home() {
 
           <section className="features" id="features">
             <div className="container">
-              <h2 className="h2 section-title">Awesome Features</h2>
+              {/* <h2 className="h2 section-title">Awesome Features</h2> */}
 
-              <p className="section-text">
-                Et harum quidem rerum facilis est et expedita distinctio nam
-                libero tempore cum soluta nobis eligendi cumque.
-              </p>
+              {/* <p className="section-text"> */}
+              <div className="features-heading">
+              <h1
+                    className="section-text h1 hero-title font-copyLocalFour"
+                    style={{ fontSize: "52px", fontWeight: 550, marginBottom: "-0.5rem" }}
+                  >
+                    Scale faster{" "}
+                    <span
+                      style={{ fontWeight: 400, display: "contents" }}
+                      className="font-copyLocalOne"
+                    >
+                      than ever
+                    </span>
+                    
+                  </h1>
+                  <p className="hero-text font-copyLocalThree">
+              Scalable isn't another fancy piece of software.<br/> It's engineered to make a difference.
+                    
+                  </p>
+              {/* </p> */}
 
-              <div className="features-wrapper">
+                  </div>
+
+                  <MarqueeDemoVertical/>
+              {/* <div className="features-wrapper">
                 <figure className="features-banner">
                   <img src="./hero-banner.png" alt="illustration art" />
                 </figure>
@@ -352,7 +388,7 @@ export default function Home() {
                     <button className="btn btn-secondary">Buy Now</button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
